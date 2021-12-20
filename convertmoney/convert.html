@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3 col-12 text-center">
+                <h5>Amount</h5>
+                <form action="">
+                    <input type="text" id="money" value=""> 
+                </form>
+            </div>
+            <div class="col-md-3 col-12 text-center">
+                <h5>From Currency</h5>
+                <select class="tex-center px-5 py-1" id="fromMoney">
+                    <option value="USD"> USD </option>
+                    <option value="Euro"> Euro </option>
+                    <option value="VND"> Vietnam Dong </option>
+                    <option value="JPY"> JPY </option>
+                </select>
+            </div>
+            <div class="col-md-3 col-12 text-center">
+                <h5>To Currency</h5>
+                <select class="tex-center px-5 py-1" id="toMoney">
+                    <option value="USD"> USD </option>
+                    <option value="Euro"> Euro </option>
+                    <option value="VND"> Vietnam Dong </option>
+                    <option value="JPY"> JPY </option>
+                </select>
+            </div>
+            <div class="col-md-3 col-12 text-center">
+                <button class="btn btn-dark py-3 px-4 mt-2" onclick="convert()" > Convert </button>
+            </div>
+        </div>
+    </div>
+    <h1 id="result"></h1>
+    
+    <script src="convert.js"></script>
+</body>
+</html>
