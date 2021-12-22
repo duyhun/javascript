@@ -1,6 +1,6 @@
 function convert() {
-    var money = document.getElementById("money").value;
-    var result = 0;
+    let  money = document.getElementById("money").value;
+    let  result = 0;
     switch(document.getElementById("fromMoney").value){
         case 'USD' : 
             switch(document.getElementById("toMoney").value){

@@ -1,5 +1,5 @@
 function checknumber() {
-    var a = document.getElementById("number").value;
+    let  a = document.getElementById("number").value;
     if (a%2 == 0){
         alert(a + ' là số chẵn');
     }else{

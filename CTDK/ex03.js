@@ -1,4 +1,4 @@
-var login = prompt('Who are you?','');
+let  login = prompt('Who are you?','');
 let pass = prompt('Password?', '');
 
 if(login == Admin){

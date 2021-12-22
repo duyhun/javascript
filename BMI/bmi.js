@@ -1,7 +1,7 @@
 function bmi() {
-    var a = document.getElementById("height").value;
-    var b = document.getElementById("weight").value;
-    var bmi = b/(a^2);
+    let  a = document.getElementById("height").value;
+    let  b = document.getElementById("weight").value;
+    let  bmi = b/(a^2);
     console.log(bmi);
     
     if (bmi < 16){
