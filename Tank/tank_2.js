@@ -1,32 +1,59 @@
-let vertical = 0;
-let horizontal = 0;
-let img = document.getElementsById("boom")[0].src;
+let tank = document.getElementById("tank");
+    let boom = document.getElementById("boom");
+    let top_boom = parseInt(boom.style["top"]);
+    let left_boom = parseInt(boom.style["left"]);
 
-function moveDown() {
-    vertical += 19;
-    document.getElementById("tank").style["top"] = vertical + "px";
-    if(vertical == 95 && horizontal == 114){
-        img = "explosion.png";
+    function moveUp() {
+        let top_tank = parseInt(tank.style["top"]); //0
+        let left_tank = parseInt(tank.style["left"]);
+        tank.style["top"] =  top_tank - 19 + "px"; //-19
+
+        top_tank = parseInt(tank.style["top"]); 
+        left_tank = parseInt(tank.style["left"]);
+
+        if (top_tank == top_boom && left_tank == left_boom) {
+            tank.style.backgroundImage = "url('https://media.istockphoto.com/vectors/boom-effect-vector-id916028398')"
+            tank.style.zIndex = 1;
+        }
     }
-}
-function moveUp() {
-    vertical -= 19;
-    document.getElementById("tank").style["top"] = vertical + "px";
-    if(vertical == 95 && horizontal == 114){
-        img = "explosion.png";
+
+
+    function moveDown() {
+        let top_tank = parseInt(tank.style["top"]);
+        let left_tank = parseInt(tank.style["left"]);
+        tank.style["top"] =  top_tank + 19 + "px";
+        top_tank = parseInt(tank.style["top"]);
+        left_tank = parseInt(tank.style["left"]);
+
+        if (top_tank == top_boom && left_tank == left_boom) {
+            tank.style.backgroundImage = "url('https://media.istockphoto.com/vectors/boom-effect-vector-id916028398')"
+            tank.style.zIndex = 1;
+        }
     }
-}
-function moveRight() {
-    horizontal += 38;
-    document.getElementById("tank").style["left"] = horizontal + "px";
-    if(vertical == 95 && horizontal == 114){
-        img = "explosion.png";
+
+    function moveLeft() {
+        let top_tank = parseInt(tank.style["top"]);
+        let left_tank = parseInt(tank.style["left"]);
+        tank.style["left"] =  left_tank - 19 + "px";
+
+        top_tank = parseInt(tank.style["top"]);
+        left_tank = parseInt(tank.style["left"]);
+
+        if (top_tank == top_boom && left_tank == left_boom) {
+            tank.style.backgroundImage = "url('https://media.istockphoto.com/vectors/boom-effect-vector-id916028398')"
+            tank.style.zIndex = 1;
+        }
     }
-}
-function moveLeft(){
-    horizontal -= 38;
-    document.getElementById("tank").style["left"] = horizontal + "px";
-    if(vertical == 95 && horizontal == 114){
-        img = "explosion.png";
+
+    function moveRight() {
+        let top_tank = parseInt(tank.style["top"]);
+        let left_tank = parseInt(tank.style["left"]);
+        tank.style["left"] =  left_tank + 19 + "px";
+        top_tank = parseInt(tank.style["top"]);
+        left_tank = parseInt(tank.style["left"]);
+
+        if (top_tank == top_boom && left_tank == left_boom) {
+            tank.style.backgroundImage = "url('https://media.istockphoto.com/vectors/boom-effect-vector-id916028398')"
+            tank.style.zIndex = 1;
+        }
     }
-}

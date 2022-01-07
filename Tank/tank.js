@@ -10,13 +10,12 @@ function moveUp() {
     document.getElementById("tank").style["top"] = vertical + "px";
     
 }
-function moveRight() {
+                    function moveRight() {
     horizontal += 38;
     document.getElementById("tank").style["left"] = horizontal + "px";
     
 }
 function moveLeft(){
     horizontal -= 38;
-    document.getElementById("tank").style["left"] = horizontal + "px";
-    
+    document.getElementById("tank").style["left"] = horizontal + "px";   
 }
