@@ -1,11 +1,11 @@
-let sout = "<table border='1' width='900' cellspacing='0' cellpadding='5'>"
-for(i = 2; i < 10; i++){
+let sout = "<table border='1' width='1100' cellspacing='15' cellpadding='8'>"
+for( j = 1; j <= 9; j++){
     sout = sout + "<tr>";
-    for(j = 1; j <=9; j++){
-        sout = sout + "<td>" + i * j + "</td>";
+    for(i = 1;i <=10;i++){
+        let product = j * i;
+        sout = sout + "<td>" + j + " * " +  i + " = " + product + "</td>";
     }
-    sout = sout + "</td>";
+    sout = sout + "</tr>";
 }
-
-sout =  sout + "</table>";
+sout = sout + "</table>";
 document.write(sout);
