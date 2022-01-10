@@ -28,9 +28,9 @@ document.write("<br>")
 
 for(i = 5; i >= 1; i--){
     for(k = 5; k > i; k--){
-        document.write("&ensp" + "&nbsp");
+        document.write("&nbsp" + "&nbsp");
     }
-    for(j = 1; j <= i; j--){
+    for(j = 1; j <= i; j++){
         document.write("*");
     }
     document.write("<br>")
