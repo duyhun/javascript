@@ -1,0 +1,11 @@
+let ST1 = 1;
+let ST2 = 1;
+let ST3 =  parseInt(ST1) + parseInt(ST2);
+
+for(i = ST1; i < 6;i++){
+    ST1 = ST2;
+    ST2 = ST3;
+    ST3 = parseInt(ST1) + parseInt(ST2);
+}
+console.log(ST3);
+

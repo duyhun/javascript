@@ -10,17 +10,6 @@ for(i = array.length; i > 2; i--){
 }
 console.log(array);
 
-// let array2 = [10,33,45,152,32];
-// for(i = array.length; i > 2; i--){
-//     for(j = 0;j < i-1; j++){
-//         if(array[j] < array[j + 1]){
-//             array[j] = array[j]+array[j+1];
-//             array[j] = array[j]-array[j];
-//             array[j+1] = array[j]-array[j+1];
-//         }
-//     }
-// }
-// console.log(array2);
 
 
 // a = a + b = a mới;
