@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Add people </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="section-1 text-center py-5">
+        <h3> Nhập Người dùng</h3>
+        <input type="text" id="inputName">
+        <button class="btn btn-outline-dark" onclick="add()"> Add </button>
+        <button class="btn btn-outline-success" onclick="display()"> Display </button>
+        <button class="btn btn-outline-secondary" onclick="Delete()"> Delete </button>
+        <hr style="width: 500px;">
+        <div class="section-2 text-center py-4" id="result">  </div>
+    </div>
+    <script src="display.js"></script>
+</body>
+</html>
