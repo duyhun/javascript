@@ -1,3 +1,4 @@
+let arr = [2,5,3,6,4,12,654,232,554,65,456];
 function findMin(arr) {
     var min = arr[0];
     for (var i = 1; i < arr.length; ++i) {
