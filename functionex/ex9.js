@@ -4,12 +4,12 @@ function reverseArray(arr){
     let start = 0;
     let end = arr.length - 1;
     for(start; start < end; start++, end--) {
-        // arr[start] = arr[start] + arr[end];
-        // arr[end] = arr[start] - arr[end];
-        // arr[start] = arr[start] - arr[end];
-        let b = arr[start];
-        arr[start] = arr[end];
-        arr[end] = b;
+        arr[start] = arr[start] + arr[end];
+        arr[end] = arr[start] - arr[end];
+        arr[start] = arr[start] - arr[end];
+        // let b = arr[start];
+        // arr[start] = arr[end];
+        // arr[end] = b;
     }
     return arr;
 }
